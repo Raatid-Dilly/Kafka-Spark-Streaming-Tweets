@@ -1,2 +1,3 @@
 # Kafka-Spark-Streaming-Tweets
- Record count of the number of times MLB Team are mentioned in tweets using Apache Kafka and Spark Streaming.  Spark streaming is used to write the data to a MongoDB database
+
+Streaming tweets from Twitter API using Python Tweepy module and Kafka. Tweets are then processed through Spark Streaming with NLP to find the the emotion of the tweet. The dataframe with tweet, emotion, and emotion scores are then saved to a MongoDB database. 
