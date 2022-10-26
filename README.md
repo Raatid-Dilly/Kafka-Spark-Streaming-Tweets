@@ -110,5 +110,6 @@ result = result.select("text", "class.result")
 ```
 # MongoDB
 
+The model labeled most tweets as ``neutral`` followed by ``anger`` and ``sadness``
 ![alt plot](https://github.com/Raatid-Dilly/Kafka-Spark-Streaming-Tweets/blob/main/images/mongoplot.jpg)
 
