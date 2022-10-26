@@ -14,7 +14,7 @@ Kafka is a streaming platform that:
 - Processes streams of records as they occur.
 - Is ran as a cluster on one or more servers that can span multiple datacenters. The Kafka cluster stores streams of records in categories called topics. 
 
-To send tweets a Kafka Producer is required to stream the records to a Kafka topic. Kafka services are ran in a [docker-compose file]() which is shown below. To run the docker-compose file ``cd`` into the file directory and execute ``docker-compose up`` in your CLI
+To send tweets a Kafka Producer is required to stream the records to a Kafka topic. Kafka services are ran in a docker-compose file  which is shown below. To run the docker-compose file ``cd`` into the file directory and execute ``docker-compose up`` in your CLI
 
 ```
 version: "3"
@@ -65,7 +65,7 @@ def clean_tweet(tweet):
     return tweet
 ```
 
-Full script to stream tweets can be found [here]()
+Full script to stream tweets can be found [here](https://github.com/Raatid-Dilly/Kafka-Spark-Streaming-Tweets/blob/main/twitter.py)
 
 # Spark Streaming
 
@@ -108,6 +108,8 @@ pipeline = Pipeline(stages=[
 result = pipeline.fit(tweet_df).transform(tweet_df)
 result = result.select("text", "class.result")
 ```
+[Notebook with SparkStream](https://github.com/Raatid-Dilly/Kafka-Spark-Streaming-Tweets/blob/main/spark_stream_mongo.ipynb)
+
 # MongoDB
 
 The model labeled most tweets as ``neutral`` followed by ``anger`` and ``sadness``
