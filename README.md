@@ -32,5 +32,7 @@ Reading from Kafka Server:
 
 
 
-# PyMongo
+# MongoDB
+
+### Plot showing the count of tweets per emotion
 
