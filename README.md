@@ -1,6 +1,6 @@
 # Kafka-Spark-Streaming-Tweets
 
-Tweets relating to the term ``potus`` or ``biden`` are streamed from the Twitter API using the Tweepy module in Python. The event stream is handled by a Kafka server that is created from a docker-compose file. Tweets are then processed through Spark Streaming with Hugging Face [emotion-english-distilroberta-base](https://huggingface.co/j-hartmann/emotion-english-distilroberta-base?text=Oh+Happy+Day) being used to find the emotion of the tweet. The dataframe with ``tweet`` and ``emotion`` are then saved to a MongoDB database. 
+Tweets relating to the term ``potus`` or ``biden`` are streamed from the Twitter API using the Tweepy module in Python to find the overall emotion of the tweet. The event stream is handled by a Kafka server that is created from a docker-compose file. Tweets are then processed through Spark Streaming with the Hugging Face [emotion-english-distilroberta-base](https://huggingface.co/j-hartmann/emotion-english-distilroberta-base?text=Oh+Happy+Day) model being used to find the emotion of the tweet. The dataframe with ``tweet`` and ``emotion`` are then saved to a MongoDB database. 
 
 
 ![alt text](https://github.com/Raatid-Dilly/Kafka-Spark-Streaming-Tweets/blob/main/images/My%20First%20Board-2.jpg)
